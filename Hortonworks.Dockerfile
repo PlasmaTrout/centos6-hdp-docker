@@ -4,7 +4,6 @@ ADD http://public-repo-1.hortonworks.com/ambari/centos6/1.x/updates/1.6.1/ambari
 ADD http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.1.5.0/hdp.repo /etc/yum.repos.d/hdp.repo
 
 RUN yum install -y ambari-server tar openssh-server openssh-client
-RUN ssh-keygen
 
 RUN mkdir /opt/java
 ADD http://public-repo-1.hortonworks.com/ARTIFACTS/jdk-7u45-linux-x64.tar.gz /opt/java/
